@@ -55,9 +55,16 @@ Module.register("MMM-MVGWiesty", {
                         const destination = departure.destination;
                         const isCancelled = departure.cancelled;
                         const cancelledEmoji = isCancelled ? '❌' : '';
-                        if (product === "BUS" || product === "TRAM") {
-                            return `${time} - ${product} ${label} - ${destination} ${cancelledEmoji}</br>`;
-                        } else {
+                        if (product === "BUS" || product === "TRAM" || product === "REGIONAL_BUS") {
+                            return `${time} - Bus ${label} - ${destination} ${cancelledEmoji}</br>`;
+                        } 
+                        else if (product === "TRAM") {
+                            return `${time} - Tram ${label} - ${destination} ${cancelledEmoji}</br>`;
+                        }
+                        else if (product === "RUFTAXI") {
+                            return `${time} - RufTaxi ${label} - ${destination} ${cancelledEmoji}</br>`;
+                        }
+                        else {
                             return `${time} - ${label} - ${destination} ${cancelledEmoji}</br>`;
                         }
                     })
