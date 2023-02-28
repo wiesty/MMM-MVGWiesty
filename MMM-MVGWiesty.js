@@ -71,7 +71,7 @@ Module.register("MMM-MVGWiesty", {
                     .join('');
                 wrapper.innerHTML = departures;
             })
-            .catch(error => Log.info(error));
+            .catch(error => wrapper.innerHTML = "No data by MVG. Check the station id." + console.log(error));
     
         wrapper.className = "dimmed light small";
         return wrapper;
