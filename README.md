@@ -30,7 +30,7 @@ MagicMirror² Module to display public transport from Munich  in Germany.
     station: "de:09162:6",     	// the ID from your station you want to display
     productfilters: "BAHN, BUS",        		// Filters [ALL (for all), UBAHN, BUS, SBAHN, TRAM, BAHN, REGIONAL_BUS, RUFTAXI]
     lines: "ALL"    							//Filter for lines (ALL (for all) S7, 13, 180, U7, U3)
-}
+},
 ```
 
 Note:
