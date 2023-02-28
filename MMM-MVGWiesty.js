@@ -71,7 +71,7 @@ Module.register("MMM-MVGWiesty", {
                     .join('');
                 wrapper.innerHTML = departures;
             })
-            .catch(error => console.log(error));
+            .catch(error => Log.info(error));
     
         wrapper.className = "dimmed light small";
         return wrapper;
