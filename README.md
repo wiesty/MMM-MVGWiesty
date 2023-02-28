@@ -1,6 +1,8 @@
 # MMM-mvgmunich [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/wiesty/MMM-MVGWiesty/raw/master/LICENSE) [![Build Status](https://api.travis-ci.org/mrVragec/MMM-mvgmunich.svg?branch=master)](https://travis-ci.org/wiesty/MMM-MVGWiesty) [![Known Vulnerabiliries](https://snyk.io/test/github/mrvragec/mmm-mvgmunich/badge.svg)](https://snyk.io/test/github/wiesty/MMM-MVGWiesty) 
 
 MagicMirror² Module to display public transport from Munich  in Germany.
+
+
 ![example view](https://i.imgur.com/K3105YW.jpg)
 
 ![Wiesty MVG Api Helper](https://i.imgur.com/fpXC1Bd.png)
@@ -11,6 +13,7 @@ MagicMirror² Module to display public transport from Munich  in Germany.
 
 ## Installation
 1. Clone this repository in your MagicMirror installation into the folder modules.
+```git clone https://github.com/wiesty/MMM-MVGWiesty.git```
 2. Install dependencies in main MagicMirror folder
 3. Head over to [Wiesty's MVG Api Helper](https://wiesty.de/mvghelper/) (Its a basic html tool to get the station id for the config.)
 4. Add configuration to your config.js
