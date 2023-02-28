@@ -1,0 +1,19 @@
+{
+  "name": "MMM-MVGWiesty",
+  "version": "1.0.0",
+  "description": "",
+  "main": "MMM-MVGWiesty.js",
+  "author": "wiesty",
+  "license": "MIT",
+  "homepage": "https://github.com/wiesty/MMM-MVGWiesty",
+  "keywords": [
+    "magic mirror",
+    "public transport",
+    "mvg",
+    "mvv"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wiesty/MMM-MVGWiesty"
+  }
+}
