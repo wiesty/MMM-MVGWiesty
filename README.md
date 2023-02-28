@@ -24,7 +24,7 @@ MagicMirror² Module to display public transport from Munich  in Germany.
     maxEntries: 7,             // 7 items on screen
     updateInterval: 60  *  5000,      // evey 5 min
     showIcons: false,            	// Show transport type icon
-    station: "de:09162:604",     	// the ID from your station you want to display
+    station: "de:09162:6",     	// the ID from your station you want to display
     productfilters: "BAHN, BUS",        		// Filters [ALL (for all), UBAHN, BUS, SBAHN, TRAM, BAHN, REGIONAL_BUS, RUFTAXI]
     lines: "ALL"    							//Filter for lines (ALL (for all) S7, 13, 180, U7, U3)
 }
