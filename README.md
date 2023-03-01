@@ -29,7 +29,8 @@ MagicMirror² Module to display public transport from Munich  in Germany.
     showIcons: false,            	// Show transport type icon
     station: "de:09162:6",     	// the ID from your station you want to display
     productfilters: "BAHN, BUS",        		// Filters [ALL (for all), UBAHN, BUS, SBAHN, TRAM, BAHN, REGIONAL_BUS, RUFTAXI]
-    lines: "ALL"    							//Filter for lines (ALL (for all) S7, 13, 180, U7, U3)
+    lines: "ALL",    							//Filter for lines (ALL (for all) S7, 13, 180, U7, U3)
+    destinations: "ALL"    							//Filter for destinations (ALL (for all) Flughafen München, Freising)
 },
 ```
 
