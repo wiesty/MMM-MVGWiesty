@@ -1,7 +1,7 @@
 {
   "name": "MMM-MVGWiesty",
   "version": "1.4.0",
-  "description": "",
+  "description": "MagicMirror² Module to display public transport from Munich in Germany.",
   "main": "MMM-MVGWiesty.js",
   "author": "wiesty",
   "license": "MIT",
