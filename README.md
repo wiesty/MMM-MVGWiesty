@@ -39,3 +39,5 @@ MagicMirror² Module to display public transport from Munich  in Germany.
 
 Note:
 ❌ If the line is canceled, the emoji will be displayed. (See the example picture)
+
+**Filters**: Filters are comma-seperated. 
