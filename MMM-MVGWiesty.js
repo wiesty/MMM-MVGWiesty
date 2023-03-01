@@ -55,17 +55,23 @@ Module.register("MMM-MVGWiesty", {
                         const destination = departure.destination;
                         const isCancelled = departure.cancelled;
                         const cancelledEmoji = isCancelled ? '❌' : '';
-                        if (product === "BUS" || product === "TRAM" || product === "REGIONAL_BUS") {
-                            return `${time} - Bus ${label} - ${destination} ${cancelledEmoji}</br>`;
+                        if (product === "BUS" || product === "REGIONAL_BUS") {
+                            return `${time} &nbsp;&nbsp; <img class="productsvg" src="modules/MMM-MVGWiesty/assets/bus.svg"> ${label} - ${destination} ${cancelledEmoji}</br>`;
                         } 
                         else if (product === "TRAM") {
-                            return `${time} - Tram ${label} - ${destination} ${cancelledEmoji}</br>`;
+                            return `${time} &nbsp;&nbsp; <img class="productsvg" src="modules/MMM-MVGWiesty/assets/tram.svg"> ${label} - ${destination} ${cancelledEmoji}</br>`;
                         }
                         else if (product === "RUFTAXI") {
-                            return `${time} - RufTaxi ${label} - ${destination} ${cancelledEmoji}</br>`;
+                            return `${time} &nbsp;&nbsp; Ruftaxi ${label} - ${destination} ${cancelledEmoji}</br>`;
+                        }
+                        else if (product === "UBAHN"){
+                            return `${time} &nbsp;&nbsp; <img class="productsvg" src="modules/MMM-MVGWiesty/assets/ubahn.svg"> ${label} - ${destination} ${cancelledEmoji}</br>`;
+                        }
+                        else if (product === "SBAHN"){
+                            return `${time} &nbsp;&nbsp; <img class="productsvg" src="modules/MMM-MVGWiesty/assets/sbahn.svg"> ${label} - ${destination} ${cancelledEmoji}</br>`;
                         }
                         else {
-                            return `${time} - ${label} - ${destination} ${cancelledEmoji}</br>`;
+                            return `${time} &nbsp;&nbsp; ${label} - ${destination} ${cancelledEmoji}</br>`;
                         }
                     })
                     .join('');

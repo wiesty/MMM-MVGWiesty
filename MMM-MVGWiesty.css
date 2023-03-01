@@ -1,9 +1,13 @@
 .MMM-MVGWiesty {
-  width: 100%;
-  text-align: left;
-  background-color: transparent;
-  font-size: 1.2em;
-  color: white;
-  padding: 10px;
-  box-sizing: border-box;
-}
+    width: 100%;
+    text-align: left;
+    background-color: transparent;
+    font-size: 1.2em;
+    color: white;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .productsvg {
+    height: 1em;
+  }
