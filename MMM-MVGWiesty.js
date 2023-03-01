@@ -6,7 +6,8 @@ Module.register("MMM-MVGWiesty", {
       footway: 0,
       station: "de:09162:6",
       productfilters: "ALL",
-      lines: "ALL"
+      lines: "ALL",
+      destinations: "ALL"
     },
 
   
@@ -39,12 +40,15 @@ Module.register("MMM-MVGWiesty", {
                     .filter(departure => {
                         const productfilters = this.config.productfilters.split(',').map(filter => filter.trim());
                         const lines = this.config.lines.split(',').map(line => line.trim());
+                        const destinations = this.config.destinations.split(',').map(destination => destination.trim());
                         if (productfilters[0] === "ALL" || productfilters.includes(departure.product)) {
                             if (lines[0] === "ALL" || lines.includes(departure.label)) {
-                                return true;
+                                if (destinations[0] === "ALL" || destinations.includes(departure.destination)) {
+                                    return true;
+                                }
                             }
                         }
-                        return false;
+                    return false;
                     })
                     .filter(departure => !departure.cancelled)
                     .slice(0, this.config.maxEntries)
