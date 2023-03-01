@@ -60,22 +60,22 @@ Module.register("MMM-MVGWiesty", {
                         const isCancelled = departure.cancelled;
                         const cancelledEmoji = isCancelled ? '❌' : '';
                         if (product === "BUS" || product === "REGIONAL_BUS") {
-                            return `${time} &nbsp;&nbsp; <img class="productsvg" src="modules/MMM-MVGWiesty/assets/bus.svg"> ${label} - ${destination} ${cancelledEmoji}</br>`;
+                            return `<strong>${time}</strong> &nbsp;&nbsp; <img class="productsvg" src="modules/MMM-MVGWiesty/assets/bus.svg"> ${label} - ${destination} ${cancelledEmoji}</br>`;
                         } 
                         else if (product === "TRAM") {
-                            return `${time} &nbsp;&nbsp; <img class="productsvg" src="modules/MMM-MVGWiesty/assets/tram.svg"> ${label} - ${destination} ${cancelledEmoji}</br>`;
+                            return `<strong>${time} </strong>&nbsp;&nbsp; <img class="productsvg" src="modules/MMM-MVGWiesty/assets/tram.svg"> ${label} - ${destination} ${cancelledEmoji}</br>`;
                         }
                         else if (product === "RUFTAXI") {
-                            return `${time} &nbsp;&nbsp; Ruftaxi ${label} - ${destination} ${cancelledEmoji}</br>`;
+                            return `<strong>${time}</strong> &nbsp;&nbsp; Ruftaxi ${label} - ${destination} ${cancelledEmoji}</br>`;
                         }
                         else if (product === "UBAHN"){
-                            return `${time} &nbsp;&nbsp; <img class="productsvg" src="modules/MMM-MVGWiesty/assets/ubahn.svg"> ${label} - ${destination} ${cancelledEmoji}</br>`;
+                            return `<strong>${time}</strong> &nbsp;&nbsp; <img class="productsvg" src="modules/MMM-MVGWiesty/assets/ubahn.svg"> ${label} - ${destination} ${cancelledEmoji}</br>`;
                         }
                         else if (product === "SBAHN"){
-                            return `${time} &nbsp;&nbsp; <img class="productsvg" src="modules/MMM-MVGWiesty/assets/sbahn.svg"> ${label} - ${destination} ${cancelledEmoji}</br>`;
+                            return `<strong>${time}</strong> &nbsp;&nbsp; <img class="productsvg" src="modules/MMM-MVGWiesty/assets/sbahn.svg"> ${label} - ${destination} ${cancelledEmoji}</br>`;
                         }
                         else {
-                            return `${time} &nbsp;&nbsp; ${label} - ${destination} ${cancelledEmoji}</br>`;
+                            return `<strong>${time}</strong> &nbsp;&nbsp; ${label} - ${destination} ${cancelledEmoji}</br>`;
                         }
                     })
                     .join('');
