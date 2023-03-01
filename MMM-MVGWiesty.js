@@ -66,7 +66,7 @@ Module.register("MMM-MVGWiesty", {
                             return `<strong>${time} </strong>&nbsp;&nbsp; <img class="productsvg" src="modules/MMM-MVGWiesty/assets/tram.svg"> ${label} - ${destination} ${cancelledEmoji}</br>`;
                         }
                         else if (product === "RUFTAXI") {
-                            return `<strong>${time}</strong> &nbsp;&nbsp; Ruftaxi ${label} - ${destination} ${cancelledEmoji}</br>`;
+                            return `<strong>${time} </strong>&nbsp;&nbsp; <img class="productsvg" src="modules/MMM-MVGWiesty/assets/ruftaxi.svg"> ${label} - ${destination} ${cancelledEmoji}</br>`;
                         }
                         else if (product === "UBAHN"){
                             return `<strong>${time}</strong> &nbsp;&nbsp; <img class="productsvg" src="modules/MMM-MVGWiesty/assets/ubahn.svg"> ${label} - ${destination} ${cancelledEmoji}</br>`;
@@ -74,12 +74,18 @@ Module.register("MMM-MVGWiesty", {
                         else if (product === "SBAHN"){
                             return `<strong>${time}</strong> &nbsp;&nbsp; <img class="productsvg" src="modules/MMM-MVGWiesty/assets/sbahn.svg"> ${label} - ${destination} ${cancelledEmoji}</br>`;
                         }
+                        else if (product === "BAHN"){
+                            return `<strong>${time}</strong> &nbsp;&nbsp; <img class="productsvg" src="modules/MMM-MVGWiesty/assets/regio.svg"> ${label} - ${destination} ${cancelledEmoji}</br>`;
+                        }
                         else {
                             return `<strong>${time}</strong> &nbsp;&nbsp; ${label} - ${destination} ${cancelledEmoji}</br>`;
                         }
                     })
                     .join('');
                 wrapper.innerHTML = departures;
+                if (departures <= 0){
+                    wrapper.innerHTML = "MVG Wiesty </br>No data found :( </br> Check your config!"
+                }
             })
             .catch(error => wrapper.innerHTML = "No data by MVG. Check the station id." + console.log(error));
     
