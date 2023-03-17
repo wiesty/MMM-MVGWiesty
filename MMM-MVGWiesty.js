@@ -83,7 +83,12 @@ Module.register("MMM-MVGWiesty", {
                             }
                         })
                         .join('');
-                    wrapper.innerHTML = departures;
+                    const departuresDiv = document.createElement("div");
+                    departuresDiv.innerHTML = departures;
+                    while (departuresDiv.firstChild) {
+                    wrapper.appendChild(departuresDiv.firstChild);
+                    }
+
                     if (departures <= 0){
                         wrapper.innerHTML = "MVG Wiesty </br>No data found :( </br> Check your config!"
                     }
