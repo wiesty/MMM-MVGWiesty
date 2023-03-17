@@ -1,5 +1,4 @@
-# MMM-mvgmunich [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/wiesty/MMM-MVGWiesty/raw/master/LICENSE) [![Build Status](https://api.travis-ci.org/mrVragec/MMM-mvgmunich.svg?branch=master)](https://travis-ci.org/wiesty/MMM-MVGWiesty) [![Known Vulnerabiliries]
-
+# MMM-mvgmunich [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/wiesty/MMM-MVGWiesty/raw/master/LICENSE) [![Build Status](https://api.travis-ci.org/mrVragec/MMM-mvgmunich.svg?branch=master)](https://travis-ci.org/wiesty/MMM-MVGWiesty) 
 MagicMirror² Module to display public transport from Munich  in Germany.
 
 
