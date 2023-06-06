@@ -1,6 +1,11 @@
 # MMM-mvgmunich [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/wiesty/MMM-MVGWiesty/raw/master/LICENSE)
-
 MagicMirror² Module to display public transport from Munich  in Germany.
+
+
+# NEW VERSION: [MMM-MVVWiesty](https://github.com/wiesty/MMM-MVVWiesty)
+## Important Note: 
+The previous API used in this project has been deprecated and is no longer available. As a result, we have migrated to the new "mvv-muenchen" API to ensure continued support and improved performance.
+
 
 
 ![example view](https://i.imgur.com/p5oYKuf.jpg)
